@@ -8,6 +8,7 @@ paru -S git-credential-manager git-credential-manager-extras --noconfirm
 git config --global user.email "justlemoncl@gmail.com"
 git config --global user.name "Hannele Ruiz"
 git config --global init.defaultBranch master
+git config --global --add safe.directory "*"  # Dangerous, but I don't clone everything I see
 
 # Git Credential Manager
 git config --global credential.credentialStore secretservice
