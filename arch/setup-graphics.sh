@@ -13,6 +13,8 @@ if lspci | grep -q "VGA compatible controller: Advanced Micro Devices, Inc."; th
     PACKAGES+=(lib32-vulkan-radeon)
     PACKAGES+=(libva-mesa-driver)
     PACKAGES+=(lib32-libva-mesa-driver)
+    PACKAGES+=(mesa-vdpau)
+    PACKAGES+=(lib32-mesa-vdpau)
 fi
 
 pacman -Sy "${PACKAGES[@]}" --needed --noconfirm
